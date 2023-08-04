@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Create Customer</title>
+
+    <th:block th:replace="cp/layout/head :: style-meta"/>
+
+    <th:block th:replace="cp/layout/head :: style-app"/>
+</head>
+
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- Top Bar Start -->
+    <div class="topbar">
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <div class="text-center">
+                <a href="index.html" class="logo"><img src="/assets/images/logo.png" alt="logo-img"></a>
+                <a href="index.html" class="logo-sm"><img src="/assets/images/logo_sm.png" alt="logo-img"></a>
+            </div>
+        </div>
+        <!-- Button mobile view to collapse sidebar menu -->
+
+
+        <!-- Topbar Start -->
+        <th:block th:replace="cp/layout/navbar-custom"/>
+        <!-- end Topbar -->
+    </div>
+    <!-- Top Bar End -->
+
+
+    <!-- ========== Left Sidebar Start ========== -->
+
+    <th:block th:replace="cp/layout/left-side-menu"/>
+    <!-- Left Sidebar End -->
+
+    <!-- Start right Content here -->
+
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+
+            <div class="">
+                <div class="page-header-title">
+                    <h4 class="page-title">Create Customer</h4>
+                </div>
+            </div>
+            <div class="page-content-wrapper ">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="m-t-0 m-b-30">Create Customer</h4>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputPassword3"
+                                                       placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword4" class="col-sm-3 control-label">Re
+                                                Password</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputPassword4"
+                                                       placeholder="Retype Password">
+                                            </div>
+                                        </div>
+                                        <!--                                        <div class="form-group">-->
+                                        <!--                                            <div class="offset-sm-3 col-sm-9">-->
+                                        <!--                                                <div class="checkbox checkbox-primary">-->
+                                        <!--                                                    <input id="checkbox222" type="checkbox">-->
+                                        <!--                                                    <label for="checkbox222">-->
+                                        <!--                                                        Check me out !-->
+                                        <!--                                                    </label>-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
+                                        <div class="form-group m-b-0">
+                                            <div class="offset-sm-3 col-sm-9">
+                                                <button type="submit" class="btn btn-info waves-effect waves-light">
+                                                    Create
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div> <!-- card-body -->
+                            </div> <!-- card -->
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> <!-- content -->
+
+            <!-- Footer Start -->
+            <th:block th:replace="cp/layout/footer"/>
+            <!-- end Footer -->
+
+        </div>
+        <!-- End Right content here -->
+
+    </div>
+    <!-- END wrapper -->
+
+
+    <!-- jQuery  -->
+    <th:block th:replace="cp/layout/script :: script-js"/>
+
+</div>
+</body>
+</html>
